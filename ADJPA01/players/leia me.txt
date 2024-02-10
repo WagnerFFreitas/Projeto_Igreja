@@ -1,0 +1,18 @@
+
+ Antes de hospedar o player em seu site, edite o arquivo "config.php" e informe
+ o api do seu streaming, o api pode ser localizado no painel do streaming em "Api de Integração".
+
+ Se por acaso queira mudar o layout do player você pode escolher um no skin usando o seguinte modelo:
+
+index.php?skin=sem_rtmp
+
+Ex:
+www.seusite.com.br/players/index.php?skin=sem_rtmp
+
+Temos os skins disponíveis:
+
+sem_rtmp
+html5
+flash
+
+ 

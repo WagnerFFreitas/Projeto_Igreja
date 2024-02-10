@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-default{
+	margin-bottom: 0px;/*Remove espaço entre o carousel de imagens e o menu da pagina home*/
+}
+
+/*Style Nosso Canal no Youtube*/
+.col-md-4 h4{
+	margin-top: 5%;
+}
+
+.footer{
+	background-color: #e0e0e0;
+	text-align: center;
+}
+
+/*Style Galeria de Fotos*/
+.hide-bullets {
+    list-style:none;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+#carousel-bounding-box{
+	margin-top: 5%;
+}
+
+/*Style menu*/
+.menu ul li{
+	font-size: 16px;
+}
+
+.menu ul li:hover{
+	background-color: #e0e0e0;
+}
+
+.menu a:hover{
+	color: #ffffff !important;
+}

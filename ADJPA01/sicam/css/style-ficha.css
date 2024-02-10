@@ -1,0 +1,88 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.input_nome{
+	width: 300px;
+}
+
+.input_cpf{
+	width: 100px;
+}
+
+.input_rg{
+	width: 100px;
+}
+
+.input_nome_pai{
+	width: 200px;
+}
+
+.input_nome_mae{
+	width: 200px;
+}
+
+.input_naturalidade{
+	width: 150px;
+}
+
+.input_endereco{
+	width: 300px;
+}
+
+.input_numero{
+	width: 20px;
+}
+
+.input_bairro{
+	width: 40px;
+}
+
+.input_estado{
+	width: 20px;
+}
+
+.input_cidade{
+	width: 150px;
+}
+
+.input_telefone{
+	width: 100px;
+}
+
+.input_celular{
+	width: 100px;
+}
+
+.input_data_nascimento{
+	width: 70px;
+}
+
+.input_estado_civil{
+	width: 45px;
+}
+
+.input_profissao{
+	width: 150px;
+}
+
+.input_data_conversao{
+	width: 70px;
+}
+
+.input_data_batismo{
+	width: 70px;
+}
+
+.input_nome_igreja_anterior{
+	width: 250px;
+}
+
+.input_telefone_igreja_anterior{
+	width: 100px;
+}
+
+.text_area_observacoes{
+	width: 100%;
+}

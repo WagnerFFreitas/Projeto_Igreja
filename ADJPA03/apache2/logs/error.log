@@ -1,0 +1,6 @@
+[Fri Oct 04 09:36:14.033338 2019] [mpm_winnt:notice] [pid 11276:tid 840] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Fri Oct 04 09:36:14.033338 2019] [mpm_winnt:notice] [pid 11276:tid 840] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Fri Oct 04 09:36:14.033338 2019] [core:notice] [pid 11276:tid 840] AH00094: Command line: 'C:\\Users\\tobol\\Documents\\GitHub\\Projeto-Senac-Conclusao/apache2/bin/httpd_usbwv8.exe -d C:/Users/tobol/Documents/GitHub/Projeto-Senac-Conclusao/apache2'
+[Fri Oct 04 09:36:14.034338 2019] [mpm_winnt:notice] [pid 11276:tid 840] AH00418: Parent: Created child process 3300
+[Fri Oct 04 09:36:14.743338 2019] [mpm_winnt:notice] [pid 3300:tid 832] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 04 09:36:17.068630 2019] [:error] [pid 3300:tid 1360] [client ::1:50100] PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\\Users\\tobol\\Documents\\GitHub\\Projeto-Senac-Conclusao\\root\\index.php on line 47

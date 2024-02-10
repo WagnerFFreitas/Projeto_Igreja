@@ -1,0 +1,102 @@
+/*Inicio Style login*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.container-fluid{
+  padding-top: 30px;
+}
+
+footer{
+  color: #FFFFFF;
+  height: 30px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+  font-weight: normal;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/*Fim Style login*/
+
+/*Inicio Style /pages/index.php*/
+.img-logo-navbar{
+	height: 30px;
+}
+
+.btn-link:link {
+  text-decoration: none;
+}
+/*Fim Style /pages/index.php*/
+
+/*Inicio Style paginação*/
+ 
+.btn-default{
+  border: 1px solid #000000;
+}
+
+.btn-default:hover{
+  background-color: #333;
+  color: #FFFFFF;
+
+}
+a.destaque{  
+      border: 1px solid #000000;
+      background-color: #FFFFFF;
+      color: #000000;
+ } 
+
+ a.destaque:hover{
+  background-color: #000000;
+  color: #FFFFFF;
+ }
+
+ .esconder{
+      visibility: hidden;
+ }
+
+ .mostrar{
+      visibility: visible;
+ }
+/*Fim Style paginação*/

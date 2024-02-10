@@ -1,0 +1,112 @@
+/* CSS Document */
+
+body {
+  font: 65%/1.6 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+#header { width:90%; height: 75px; background-image: url(../img/AssDeusEnvelope.png); background-repeat: no-repeat;
+	 background-position: left bottom; margin: 0; padding: 0 10px 0 10px;}
+#header p { width:auto; height: auto; float: right; padding: 5px 50px 0 3px; text-align:right;}
+
+.clear {
+  clear: both;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+col {
+  border-right: 1px solid #000;
+}
+
+col#albumCol {
+  border: none;
+}
+
+thead {
+  background: #ccc url(images/bar.gif) repeat-x left center;
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+th {
+  text-align: left;
+}
+
+.centro {
+  text-align: center;
+}
+
+#playlistPosHead {
+  text-indent: -1000em;
+}
+
+th, td {
+  padding: 0.1em 1em;
+}
+
+.odd {
+  background-color:#DCDCDC;
+}
+
+
+.dados {
+  background-color: #FFFFFF;
+}
+
+
+.odd2 {
+  background-color:#BFEFFF;
+}
+
+a {
+	text-decoration:none;
+	color : #000;
+}
+
+a:link:after, a:visited:after {
+	content:"("attr(href)")";
+	font-size: 80%;
+	color:#555555;
+	background:#ffffff;
+}
+
+td#moeda {
+	text-align:right;
+}
+
+#total {
+	background-color:#000;
+	font-weight:bold;
+	color:#ccc;
+}
+#footer {
+	color: #636466;
+	font-size: 0.8em;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: top;
+	text-align: left;
+	clear: both;
+	margin: 0;
+	padding-top: 25px;
+	padding: 10px 0 0 0;
+	background-image: url(../img/horbar.jpg);
+    background-size: 100% 30px;
+}
+
+#footer a       { color: #636466; text-decoration: underline }
+#footer a:link       { color: #636466; text-decoration: underline }
+#footer a:visited { }
+#footer a:hover      { color: #e7790e }

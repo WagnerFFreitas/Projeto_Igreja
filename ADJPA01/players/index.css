@@ -1,0 +1,45 @@
+div#container
+{
+   width: 970px;
+   position: relative;
+   margin-top: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+body
+{
+   text-align: center;
+   margin: 0;
+   background-color: #000000;
+   background-image: url(imagem/img-icone-fundo-player-barra.jpg);
+   background-repeat: repeat-x;
+   color: #000000;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+}
+#Image2
+{
+   border: 0px #000000 solid;
+}
+#Image3
+{
+   border: 0px #000000 solid;
+}
+#Image4
+{
+   border: 0px #000000 solid;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
