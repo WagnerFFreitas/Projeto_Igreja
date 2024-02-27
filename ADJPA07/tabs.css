@@ -1,0 +1,90 @@
+
+table#direita {
+  border-collapse: collapse;
+  width: auto;
+  border: 1px solid #777;
+  margin-left: 1px;
+}
+
+caption {
+  font-size: 1.2em;
+  font:icon;
+  text-align:center;
+  font-weight: bold;
+  margin: 1em 0;
+  color:#000000;
+}
+
+col {
+  border-right: 1px solid #000000;
+}
+
+col#albumCol {
+  border-right: none;
+}
+
+tbody#periodo tr:hover,tbody#recibos tr:hover {
+  background-color:#C1CDCD;
+  color:green;
+}
+
+thead {
+  background: #CFCFCF;
+  border: 2px solid #000;
+  font-size: 120%;
+  color:#000000;
+}
+
+td#moeda, p#moeda  {
+	text-align:right;
+}
+
+td#centro, .centro {
+	text-align:center;
+}
+td a#bloco {
+	display:block; color: #FF4500;
+}
+
+#playlistPosHead {
+  text-indent: -1000em;
+}
+
+th, td {
+  padding: 0.1em 1em;
+}
+
+thead tr:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+.odd {
+	background-color:#E8E8E8;
+	color:#000;
+}
+
+.odd3 {
+	background-color:#FFFFFF;
+	color:#000;
+	 border-bottom: 1px dotted #000;
+	 border-top: 1px dotted #000;
+}
+
+#total {
+	background-color:#5d5c5c;
+	color:#FFF;
+}
+
+#subtotal {
+	background-color:#1485CC;
+	color:#FFFFFF;
+}
+.dados {
+	background-color: #FFFFFF;
+	color:#000;
+}
+
+.odd2 {
+  background-color:#BFEFFF;
+}

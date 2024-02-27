@@ -12,11 +12,11 @@ class editar_form {
 		$this->vlr_get		= $vlr_get;//Valor relacionaod ao get
 		$this->valor 		= $valor;//O valor do campo no banco de dados
 		$this->acao 		= $acao;//Link para onde o form ira direcionar os dadosa. Ex.:adm/atualizar_dados.php
-		$this->link_form 	= $link_form.$vlr_get;//Link de chamada do form para edição do form. Ex.: adm/dados_pessoais.php&campo=datanasc&tabela=membro
+		$this->link_form 	= $link_form.$vlr_get;//Link de chamada do form para ediï¿½ï¿½o do form. Ex.: adm/dados_pessoais.php&campo=datanasc&tabela=membro
 	}
 	
 	public function getVazio () {
-	// se valor devolvido pelo banco for vázio
+	// se valor devolvido pelo banco for vï¿½zio
 		if ($this->valor=="")
 		{
 			$this->valor="N&atilde;o informado";
@@ -45,10 +45,10 @@ class editar_form {
 			<?PHP;	
 	}
 	
-	/* Formulário para edição por item. Neste form os campos são recebidos de qualquer 
-	campo para edição da tabela. Bastando para isso o envio do campo por GET-campo, esse campo que é 
-	passado, também é responsável pelo da tabela que será alterado e o GET-tabela traz o nome da tabela
-	que sofrerá alteração. Em agumas ocasiões também é passado o campo UF.*/
+	/* Formulï¿½rio para ediï¿½ï¿½o por item. Neste form os campos sï¿½o recebidos de qualquer 
+	campo para ediï¿½ï¿½o da tabela. Bastando para isso o envio do campo por GET-campo, esse campo que ï¿½ 
+	passado, tambï¿½m ï¿½ responsï¿½vel pelo da tabela que serï¿½ alterado e o GET-tabela traz o nome da tabela
+	que sofrerï¿½ alteraï¿½ï¿½o. Em agumas ocasiï¿½es tambï¿½m ï¿½ passado o campo UF.*/
 	public function getEditar(){
 
 	if ($this->campo==$this->vlr_get){
@@ -65,7 +65,7 @@ class editar_form {
 			?>  
 			  <input type="text" name="<?PHP echo $this->campo;?>" value="
 			  <?PHP
-			  //No caso para o campo naturalidade o campo UF é adiconado 
+			  //No caso para o campo naturalidade o campo UF ï¿½ adiconado 
 			  echo $this->valor;if ($this->campo=="naturalidade" || $this->campo=="cidade"){/*DEVE-SE SE ADICIONAR OUTRO FORM PARA UF*/}
 			  ?>" size="30" autofocus="autofocus" />
 			<?PHP
@@ -74,7 +74,7 @@ class editar_form {
 			}
 
 			if ($this->campo=="pai" || $this->campo=="mae" || $this->campo=="conjugue") {
-			//Nos campos Pai e Mãe é aberto um segundo campo do form para o rol e a opção, por JavaScript, de um script para pesquisa de membros e preenchimeto destes campos
+			//Nos campos Pai e Mï¿½e ï¿½ aberto um segundo campo do form para o rol e a opï¿½ï¿½o, por JavaScript, de um script para pesquisa de membros e preenchimeto destes campos
 			?>
 			Rol:
 			<input name="<?PHP echo "rol_{$this->campo}";?>" autofocus="autofocus" type="text" value="<?PHP echo $arr_dad["rol_{$this->campo}"];?>" size="10" />
