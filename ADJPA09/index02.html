@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Formulário de Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form id="form-cadastro" method="post" action="cadastro.php">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="">Selecione</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+        <label for="data_nasc">Data de Nascimento:</label>
+        <input type="date" id="data_nasc" name="data_nasc" required>
+        <button type="submit" id="btn-cadastrar">Cadastrar</button>
+    </form>
+    <script>
+        // Seleciona o formulário pelo id
+        var form = document.getElementById("form-cadastro");
+
+        // Adiciona um evento de submit ao formulário
+        form.addEventListener("submit", function(event) {
+            // Previne o comportamento padrão do formulário (enviar os dados)
+            event.preventDefault();
+
+            // Cria um objeto FormData com os dados do formulário
+            var formData = new FormData(form);
+
+            // Cria um objeto XMLHttpRequest para fazer a requisição ao servidor
+            var xhr = new XMLHttpRequest();
+
+            // Define o método, a url e o tipo de resposta da requisição
+            xhr.open("POST", "cadastro.php");
+            xhr.responseType = "json";
+
+            // Adiciona um evento de load à requisição
+            xhr.addEventListener("load", function() {
+                // Verifica se a requisição foi bem sucedida (status 200)
+                if (xhr.status == 200) {
+                    // Obtém a resposta em formato JSON
+                    var response = xhr.response;
+
+                    // Verifica se a resposta tem uma propriedade chamada error
+                    if (response.hasOwnProperty("error")) {
+                        // Exibe a mensagem de erro na tela
+                        alert(response.error);
+                    } else {
+                        // Exibe a mensagem de sucesso na tela
+                        alert(response.success);
+
+                        // Limpa os campos do formulário
+                        form.reset();
+                    }
+                } else {
+                    // Exibe uma mensagem de erro genérica na tela
+                    alert("Ocorreu um erro ao enviar os dados. Tente novamente.");
+                }
+            });
+
+            // Envia a requisição com os dados do formulário
+            xhr.send(formData);
+        });
+    </script>
+</html>

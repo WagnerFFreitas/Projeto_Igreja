@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Interface com Menu</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Referencia o arquivo CSS -->
+</head>
+<body>
+    <div id="menu"> <!-- Cria uma div para o menu -->
+        <button id="btn-cadastrar" onclick="abrirJanela('cadastrar')">Cadastrar Membros</button> <!-- Cria um botão para cadastrar membros -->
+        <button id="btn-financeiro" onclick="abrirJanela('financeiro')">Financeiro</button> <!-- Cria um botão para o financeiro -->
+        <button id="btn-relatorios" onclick="abrirJanela('relatorios')">Relatórios</button> <!-- Cria um botão para os relatórios -->
+        <button id="btn-aniversarios" onclick="abrirJanela('aniversarios')">Aniversários</button> <!-- Cria um botão para os aniversários -->
+        <button id="btn-sair" onclick="sair()">Sair</button> <!-- Cria um botão para sair -->
+    </div>
+    <div id="janela"> <!-- Cria uma div para a janela -->
+        <!-- Aqui vai o conteúdo da janela -->
+    </div>
+    <script src="script.js"></script> <!-- Referencia o arquivo JavaScript -->
+</body>
+</html>

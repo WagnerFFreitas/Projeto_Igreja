@@ -1,0 +1,109 @@
+// Cria uma função para abrir a janela de acordo com o botão clicado
+function abrirJanela(opcao) {
+    // Seleciona a div da janela pelo id
+    var janela = document.getElementById("janela");
+
+    // Define o conteúdo da janela de acordo com a opção
+    switch (opcao) {
+        case "cadastrar":
+            janela.innerHTML = `
+                <ul>
+                    <li onclick="abrirFormulario('novo')">Novo Membro</li>
+                    <li onclick="abrirFormulario('editar')">Editar Membro</li>
+                    <li onclick="abrirFormulario('excluir')">Excluir Membro</li>
+                </ul>
+                <p>Aqui você pode cadastrar, editar ou excluir os membros da igreja.</p>
+            `;
+            break;
+        case "financeiro":
+            janela.innerHTML = `
+                <ul>
+                    <li onclick="abrirRelatorio('dizimos')">Dízimos</li>
+                    <li onclick="abrirRelatorio('ofertas')">Ofertas</li>
+                    <li onclick="abrirRelatorio('despesas')">Despesas</li>
+                </ul>
+                <p>Aqui você pode ver os relatórios financeiros da igreja.</p>
+            `;
+            break;
+        case "relatorios":
+            janela.innerHTML = `
+                <ul>
+                    <li onclick="abrirRelatorio('membros')">Membros</li>
+                    <li onclick="abrirRelatorio('grupos')">Grupos</li>
+                    <li onclick="abrirRelatorio('eventos')">Eventos</li>
+                </ul>
+                <p>Aqui você pode ver os relatórios administrativos da igreja.</p>
+            `;
+            break;
+        case "aniversarios":
+            janela.innerHTML = `
+                <ul>
+                    <li onclick="abrirRelatorio('mes')">Mês</li>
+                    <li onclick="abrirRelatorio('semana')">Semana</li>
+                    <li onclick="abrirRelatorio('dia')">Dia</li>
+                </ul>
+                <p>Aqui você pode ver os aniversários dos membros da igreja.</p>
+            `;
+            break;
+        default:
+            janela.innerHTML = "";
+    }
+
+    // Exibe a janela na tela
+    janela.style.display = "block";
+}
+
+// Cria uma função para sair da janela
+function sair() {
+    // Seleciona a div da janela pelo id
+    var janela = document.getElementById("janela");
+
+    // Limpa o conteúdo da janela
+    janela.innerHTML = "";
+
+    // Esconde a janela da tela
+    janela.style.display = "none";
+}
+
+// Cria uma função para abrir o formulário de acordo com a opção
+function abrirFormulario(opcao) {
+    // Seleciona o parágrafo da janela pelo id
+    var paragrafo = document.getElementById("janela").getElementsByTagName("p")[0];
+
+    // Define o conteúdo do parágrafo de acordo com a opção
+    switch (opcao) {
+        case "novo":
+            paragrafo.innerHTML = "Aqui você pode inserir os dados de um novo membro da igreja.";
+            break;
+        case "editar":
+            paragrafo.innerHTML = "Aqui você pode alterar os dados de um membro da igreja.";
+            break;
+        case "excluir":
+            paragrafo.innerHTML = "Aqui você pode excluir os dados de um membro da igreja.";
+            break;
+        default:
+            paragrafo.innerHTML = "";
+    }
+}
+
+// Cria uma função para abrir o relatório de acordo com a opção
+function abrirRelatorio(opcao) {
+    // Seleciona o parágrafo da janela pelo id
+    var paragrafo = document.getElementById("janela").getElementsByTagName("p")[0];
+
+    // Define o conteúdo do parágrafo de acordo com a opção
+    switch (opcao) {
+        case "dizimos":
+            paragrafo.innerHTML = "Aqui você pode ver o relatório dos dízimos recebidos pela igreja.";
+            break;
+        case "ofertas":
+            paragrafo.innerHTML = "Aqui você pode ver o relatório das ofertas recebidas pela igreja.";
+            break;
+        case "despesas":
+            paragrafo.innerHTML = "Aqui você pode ver o relatório das despesas realizadas pela igreja.";
+            break;
+        case "membros":
+            paragrafo.innerHTML = "Aqui você pode ver o relatório dos membros cadastrados na igreja.";
+            break;
+        case "grupos":
+            paragrafo.innerHTML = "Aqui você pode ver o

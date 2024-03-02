@@ -1,0 +1,85 @@
+/* Define o estilo do menu */
+#menu {
+    width: 100%;
+    height: 50px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Define o estilo dos botões do menu */
+#menu button {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Define o estilo dos botões do menu ao passar o mouse */
+#menu button:hover {
+    background-color: #eee;
+}
+
+/* Define o estilo dos botões do menu ao clicar */
+#menu button:active {
+    background-color: #00f;
+    color: #fff;
+}
+
+/* Define o estilo da janela */
+#janela {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: none;
+}
+
+/* Define o estilo do menu superior da janela */
+#janela ul {
+    width: 100%;
+    height: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Define o estilo dos itens do menu superior da janela */
+#janela ul li {
+    width: 100px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Define o estilo dos itens do menu superior da janela ao passar o mouse */
+#janela ul li:hover {
+    background-color: #eee;
+}
+
+/* Define o estilo dos itens do menu superior da janela ao clicar */
+#janela ul li:active {
+    background-color: #00f;
+    color: #fff;
+}
+
+/* Define o estilo do conteúdo da janela */
+#janela p {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
